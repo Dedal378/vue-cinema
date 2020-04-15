@@ -1,0 +1,60 @@
+.ui-messageBox__wrapper
+  display flex
+  justify-content center
+  align-items: center
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index 2002
+  background-color: rgba(10,10,10,0.3)
+
+.ui-messageBox
+  position relative
+  width: 100%;
+  max-width 600px
+  min-width: 360px
+  padding: 0.666666666666667rem 0.777777777777778rem
+  margin: 20px
+  background-color: #fff
+  border: 1px solid #dcdfe6
+  border-radius: 0.444444444444444rem
+  z-index 2000
+  overflow: hidden;
+  //@media screen and (max-width tableWidth)
+  //  min-width calc(min-width - 16%)
+  //@media screen and (max-width phoneWidth)
+  //  min-width calc(min-width - 40%)
+
+
+  .button-close
+    width 1.333333333333333rem
+    height 1.333333333333333rem
+
+.ui-messageBox__header
+  display: flex
+  align-items: center
+  justify-content space-between
+  padding-bottom: 0.666666666666667rem
+  margin-bottom: 0.666666666666667rem
+
+.ui-messageBox hr
+  margin-bottom: 1.666666666666667rem
+
+.messageBox-title
+  font-size: 20px
+  text-transform uppercase
+  font-weight bold
+
+.ui-messageBox__content
+  margin-bottom: 0.666666666666667rem
+
+.ui-messageBox__content p
+  margin-bottom: 0.444444444444444rem
+
+.ui-messageBox__footer
+  text-align: right
+
+.messageBox-title
+  font-size: 1.333333333333333rem
