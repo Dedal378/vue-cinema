@@ -127,6 +127,9 @@ export default {
       return getters.tasks.filter(task => {
         return task.completed === false
       })
+    },
+    taskFilterCssClass (state, getters) {
+      //
     }
   }
 }

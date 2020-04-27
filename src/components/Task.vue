@@ -7,12 +7,15 @@
           .buttons-list
             .button.button--round.button-default(
               @click="filter = 'active'"
+              :class="{ button__filter: tasksFilter = filter === 'active' }"
             ) Active
             .button.button--round.button-default(
               @click="filter = 'completed'"
+              :class="{ button__filter: tasksFilter = filter === 'completed' }"
             ) Completed
             .button.button--round.button-default(
               @click="filter = 'all'"
+              :class="{ button__filter: tasksFilter = filter === 'all' }"
             ) All
         .task-list
           transition-group(
@@ -148,8 +151,15 @@ export default {
   margin-bottom: 30px
   .button
     margin-right: 8px
+    &:hover
+      background-color: #444ce0;
+      color: #fff;
 .ui-title-1
   margin-bottom: 0
+
+.button__filter
+  background-color: #444ce0;
+  color: #fff;
 
 //
 // TASK ITEM
