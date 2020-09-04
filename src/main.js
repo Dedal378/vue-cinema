@@ -29,7 +29,14 @@ new Vue({
   store,
   created () {
     var firebaseConfig = {
-    // config
+      apiKey: 'AIzaSyBIPkHzqW6bUwg1_eQ6edaBi-4jMuWUXlU',
+      authDomain: 'cinema-mood.firebaseapp.com',
+      databaseURL: 'https://cinema-mood.firebaseio.com',
+      projectId: 'cinema-mood',
+      storageBucket: 'cinema-mood.appspot.com',
+      messagingSenderId: '736934767709',
+      appId: '1:736934767709:web:2f3e2bb7229cf23158b1b4',
+      measurementId: 'G-FCFDWMXWVD'
     }
     firebase.initializeApp(firebaseConfig)
     // firebase.analytics()

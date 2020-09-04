@@ -61,7 +61,7 @@
 
     .ui-messageBox__wrapper(
       v-show="editing"
-      :class="{active: editing}"
+      :class="{ active: editing }"
     )
       .ui-messageBox.fadeInDown
         .ui-messageBox__header
@@ -69,15 +69,14 @@
           span.button-close(@click="cancelTaskEdit")
         hr
         .ui-messageBox__content
-          // p Title
+          // Title
           input(
             type="text"
             v-model='titleEditing'
             placeholder='Title'
           )
-          // p Description
+          // Description
           textarea(
-            type="text"
             v-model="descrEditing"
             placeholder='Description'
           )
@@ -228,13 +227,6 @@ export default {
       margin-right: 0
 
 // popup
-.ui-messageBox-wrapper
-  display: flex
-  &.active
-    display: flex
-  .button-light
-    margin-right: 8px
-
 .ui-messageBox__footer
   .button
     margin-right: 10px
