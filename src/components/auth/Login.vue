@@ -183,7 +183,6 @@ export default {
         }
         this.$store.dispatch('loginUser', user)
           .then(() => {
-            console.log('LOGIN!')
             this.submitStatus = 'OK'
             this.$router.push('/')
           })
